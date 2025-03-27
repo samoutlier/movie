@@ -1,4 +1,4 @@
-export const Favorites = () => {
+function Favorites() {
   return (
     <div className="favorites-empty">
       <h2>No favorite movies yet</h2>
@@ -6,3 +6,5 @@ export const Favorites = () => {
     </div>
   );
 };
+
+export default Favorites;
