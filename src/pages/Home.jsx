@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MovieCard from "../components/MovieCard";
+import "../css/Home.css"
 
 function Home() {
 
@@ -33,8 +34,8 @@ function Home() {
     <div className="movies-grid">
       {movies.map(
         (movie) => (
-        movie.title.toLowerCase().startsWith(searchQuery) && <MovieCard movie={movie} key={movie.id} ></MovieCard>
-      ))}
+          movie.title.toLowerCase().startsWith(searchQuery) && <MovieCard movie={movie} key={movie.id} ></MovieCard>
+        ))}
     </div>
   </div >
 
